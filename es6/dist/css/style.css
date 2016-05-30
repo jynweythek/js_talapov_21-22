@@ -1,0 +1,82 @@
+body {
+    background: url("../../img/bg.png") repeat;
+
+}
+.wrapper {
+    width: 500px;
+    margin-top: 50px;
+    padding: 40px;
+    font-size: 15px;
+    -webkit-box-shadow: 10px 15px 25px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 15px 25px 2px rgba(0,0,0,0.5);
+    box-shadow: 10px 15px 25px 2px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.8);
+}
+.questBlock0 > .alert:after {
+    margin-left: 5px;
+    height: 40px;
+    width: 60px;
+    content: '';
+    display: inline-block;
+    background: url('../../img/flags.png');
+    background-position: 0 0;
+}
+.questBlock1 > .alert:after {
+    margin-left: 5px;
+    height: 40px;
+    width: 60px;
+    content: '';
+    display: inline-block;
+    background: url('../../img/flags.png');
+    background-position: 0 80px;
+}
+.questBlock2 > .alert:after {
+    margin-left: 5px;
+    height: 40px;
+    width: 60px;
+    content: '';
+    display: inline-block;
+    background: url('../../img/flags.png');
+    background-position: 0 40px;
+}
+.alert {
+    display: block;
+    margin: 15px 0 0 0;
+    font-size: 100%;
+    /*min-height: 1px;*/
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.7);
+    z-index: 1;
+}
+.panel {
+    display: block;
+    width: 500px;
+    position: fixed;
+    top: -500px;
+    right: 20px;
+    left: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    transition: top 0.8s;
+    background-image: url("https://pp.vk.me/c543104/v543104480/84ea/MeoOZjAtWpk.jpg");
+
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+/*.questBlock2 > .alert::after:hover {*/
+    /*-webkit-transform: scale(2);*/
+    /*-moz-transform: scale(2);*/
+    /*-ms-transform: scale(2);*/
+    /*-o-transform: scale(2);*/
+    /*transform: scale(2);*/
+/*}*/

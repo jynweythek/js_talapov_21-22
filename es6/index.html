@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript13-14_Rustam_Talapov</title>
+    <link rel="stylesheet" href="dist/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="dist/template.js"></script>
+    <script src="dist/script.js"></script>
+
+</head>
+<body>
+<script type="text/html" id="pattern">
+    <% for (var i = 0; i < data.length; i++) { %>
+    <div class="questBlock<%=i%>">
+        <h3 class="alert alert-warning"><%=data[i].issue%></h3>
+        <% for (var j = 0; j < data[i].pick.length; j++) { %>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"><%=data[i].pick[j]%>
+            </label>
+        </div>
+        <%}; %>
+    </div>
+    <%}; %>
+</script>
+
+<div class="container wrapper">
+    <div class="test">
+        <h2>Занимательные флаги <small>с Шелдоном Купером</small></h2>
+        <!--Template-->
+    </div>
+    <div class="overlay">
+        <div class="panel panel-primary sheldon">
+            <div class="panel-heading">
+                <h3 class="panel-title">Итак, по флагам</h3>
+            </div>
+            <div class="panel-body">
+
+            </div>
+        </div>
+    </div>
+    <input class="btn btn-default btn-info center-block" type="submit" value="Узнать правду">
+</div>
+</body>
+</html>
